@@ -7,6 +7,7 @@ import '../../public/css/styles.css';
 })
 export class AppComponent { 
   
-  public name: string = "Webpack";
+  title = 'Tour of Heroes';
+  hero = 'Windstorm';
   
 }
