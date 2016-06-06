@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-
-export class Hero {
-  id: number;
-  name: string;
-}
-
-
+import { HeroDetailComponent } from './hero-detail.component';
+import { Hero } from './hero';
 
 @Component({
   selector: 'my-app',
   template: require('./app.component.html'),
-  styles: [require('./app.component.css')]
+  styles: [require('./app.component.css')],
+  directives: [HeroDetailComponent]
 })
 export class AppComponent { 
   
