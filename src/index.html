@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <base href="/">
     <title>Angular With Webpack</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBumYG81Ird0MHFgMg12txHnoLgrKd-yT8",
+        authDomain: "ng2-intro.firebaseapp.com",
+        databaseURL: "https://ng2-intro.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+
   </head>
+
   <body>
     <my-app>Loading...</my-app>
   </body>
+
 </html>
