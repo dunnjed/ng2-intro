@@ -10,11 +10,11 @@ import { HeroService } from './hero.service';
   directives: [HeroDetailComponent],
   providers: [HeroService]
 })
-export class AppComponent implements OnInit { 
-  
+export class AppComponent implements OnInit {
+
   title = 'Tour of Heroes';
   selectedHero: Hero;
-  
+
   public heroes: Hero[];
 
   constructor(private heroService: HeroService) { }
@@ -28,8 +28,9 @@ export class AppComponent implements OnInit {
   }
 
   getHeroes() {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
-  
+
+
 }
 
