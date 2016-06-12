@@ -6,9 +6,11 @@ import {
   expect
 } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeroService } from './hero.service';
 describe('App', () => {
   beforeEachProviders(() => [
-    AppComponent
+    AppComponent,
+    HeroService
   ]);
   it ('should work', inject([AppComponent], (app: AppComponent) => {
     // Add real test here
