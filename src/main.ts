@@ -1,6 +1,6 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { AppComponent } from './app/app.component';
+import { HeroesComponent } from './app/heroes.component';
 let firebase = require('firebase');
 
 // Initialize Firebase
@@ -23,7 +23,7 @@ if (process.env.ENV === 'production') {
     // The signed-in user info.
     let user = result.user;
 
-    bootstrap(AppComponent, []);
+    bootstrap(HeroesComponent, []);
     // ...
   }).catch(function (error: any) {
     // Handle Errors here.
@@ -36,7 +36,7 @@ if (process.env.ENV === 'production') {
     // ...
   });
 } else {
-  bootstrap(AppComponent, []);
+  bootstrap(HeroesComponent, []);
 }
 
 

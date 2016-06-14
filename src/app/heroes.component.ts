@@ -4,13 +4,13 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'my-app',
-  template: require('./app.component.html'),
-  styles: [require('./app.component.css')],
+  selector: 'my-heroes',
+  template: require('./heroes.component.html'),
+  styles: [require('./heroes.component.css')],
   directives: [HeroDetailComponent],
   providers: [HeroService]
 })
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
 
   title = 'Tour of Heroes';
   selectedHero: Hero;
