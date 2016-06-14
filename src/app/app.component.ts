@@ -9,7 +9,7 @@ import { HeroService } from './hero.service';
     <my-heroes></my-heroes>
     `,
     directives: [HeroesComponent],
-    providers: [HeroService[]]
+    providers: [HeroService]
 })
 export class AppComponent {
     title: string = "Tour of Heroes";

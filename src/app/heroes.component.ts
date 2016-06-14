@@ -8,7 +8,7 @@ import { HeroService } from './hero.service';
   template: require('./heroes.component.html'),
   styles: [require('./heroes.component.css')],
   directives: [HeroDetailComponent],
-  providers: [HeroService]
+  providers: []
 })
 export class HeroesComponent implements OnInit {
 
