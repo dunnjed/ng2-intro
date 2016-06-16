@@ -15,6 +15,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router-
     </nav>
     <router-outlet></router-outlet>
     `,
+    styles: [require('./app.component.css')],
     directives: [ROUTER_DIRECTIVES],
     providers: [ROUTER_PROVIDERS, HeroService]
 })
